@@ -1,374 +1,287 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 3200" width="900" height="3200">
-  <style>
-    .terminal { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 15px; fill: #A9DC76; }
-    .header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; fill: #f8f8f2; font-weight: 600; }
-    .bg { fill: #1E1E1E; rx: 12px; }
-    .topbar { fill: #2D2D2D; rx: 12px; }
-    
-    .dot-red { fill: #ff5f56; }
-    .dot-yellow { fill: #ffbd2e; }
-    .dot-green { fill: #27c93f; }
-  </style>
-  
-  <rect class="bg" width="100%" height="100%" />
-  <path class="topbar" d="M0,12 v28 h900 v-28 a12,12 0 0,0 -12,-12 H12 a12,12 0 0,0 -12,12 Z" />
-  <line x1="0" y1="40" x2="900" y2="40" stroke="#44475a" stroke-width="1" />
-  
-  <circle cx="24" cy="20" r="6" class="dot-red" />
-  <circle cx="44" cy="20" r="6" class="dot-yellow" />
-  <circle cx="64" cy="20" r="6" class="dot-green" />
-  <text x="450" y="25" text-anchor="middle" class="header">regularDB — README.md</text>
-  
-  <!-- Content Container -->
-  <g transform="translate(0, 60)">
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.00s" fill="freeze" />
-      <text x="24" y="0" style="fill: #A9DC76;" class="terminal" xml:space="preserve">&lt;img width=&quot;676&quot; height=&quot;404&quot; alt=&quot;regularDB&quot; src=&quot;https://github.com/user-attachments/assets/162f9807-6733-4436-a886-c1242429eed0&quot; /&gt;</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.15s" fill="freeze" />
-      <text x="24" y="48" style="fill: #A9DC76;" class="terminal" xml:space="preserve">&lt;img width=&quot;676&quot; height=&quot;404&quot; alt=&quot;regularDB&quot; src=&quot;assets/regularDB_animated_pipeline.svg&quot; /&gt;</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.30s" fill="freeze" />
-      <text x="24" y="72" style="fill: #FC9867;" class="terminal" xml:space="preserve"># regularDB</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.45s" fill="freeze" />
-      <text x="24" y="120" style="fill: #A9DC76;" class="terminal" xml:space="preserve">&lt;p align=&quot;center&quot;&gt;</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.60s" fill="freeze" />
-      <text x="24" y="144" style="fill: #A9DC76;" class="terminal" xml:space="preserve">  &lt;img src=&quot;assets/readme_animation.svg&quot; alt=&quot;Animated README Terminal&quot; width=&quot;900&quot; /&gt;</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.75s" fill="freeze" />
-      <text x="24" y="168" style="fill: #A9DC76;" class="terminal" xml:space="preserve">&lt;/p&gt;</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.90s" fill="freeze" />
-      <text x="24" y="192" style="fill: #AB9DF2;" class="terminal" xml:space="preserve">&gt; A curated, standardized, and benchmarked compendium of regulatory genomic datasets for Type 2 Diabetes (T2D) research.</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.05s" fill="freeze" />
-      <text x="24" y="240" style="fill: #A9DC76;" class="terminal" xml:space="preserve">[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.20s" fill="freeze" />
-      <text x="24" y="264" style="fill: #A9DC76;" class="terminal" xml:space="preserve">[![Status](https://img.shields.io/badge/status-active%20development-orange.svg)]()</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.35s" fill="freeze" />
-      <text x="24" y="288" style="fill: #A9DC76;" class="terminal" xml:space="preserve">[![Assays](https://img.shields.io/badge/assays-5-green.svg)]()</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.50s" fill="freeze" />
-      <text x="24" y="312" style="fill: #A9DC76;" class="terminal" xml:space="preserve">[![Models](https://img.shields.io/badge/LLM%20models-6-purple.svg)]()</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.65s" fill="freeze" />
-      <text x="24" y="360" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.80s" fill="freeze" />
-      <text x="24" y="408" style="fill: #FC9867;" class="terminal" xml:space="preserve">## Overview</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.95s" fill="freeze" />
-      <text x="24" y="456" style="fill: #78DCE8;" class="terminal" xml:space="preserve">**regularDB** is an R package that systematically curates and provides programmatic access to public regulatory genomics databases relevant to Type 2 Diabetes (T2D). It enables researchers to discover, access, and benchmark epigenomics datasets — removing the barrier between biologists and high-quality regulatory data.</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.10s" fill="freeze" />
-      <text x="24" y="504" style="fill: #A9DC76;" class="terminal" xml:space="preserve">The database curation pipeline uses a **multi-LLM benchmarking approach** to systematically identify, validate, and score public databases across five major epigenomics assay types.</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.25s" fill="freeze" />
-      <text x="24" y="552" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.40s" fill="freeze" />
-      <text x="24" y="600" style="fill: #FC9867;" class="terminal" xml:space="preserve">## Assay Coverage</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.55s" fill="freeze" />
-      <text x="24" y="648" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| Assay | Status | Runs Complete |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.70s" fill="freeze" />
-      <text x="24" y="672" style="fill: #A9DC76;" class="terminal" xml:space="preserve">|---|---|---|</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.85s" fill="freeze" />
-      <text x="24" y="696" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| ATAC-seq | In progress | 1 / 3 |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="4.00s" fill="freeze" />
-      <text x="24" y="720" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| ChIP-seq | Pending | 0 / 3 |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="4.15s" fill="freeze" />
-      <text x="24" y="744" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| CUT&amp;RUN | Pending | 0 / 3 |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="4.30s" fill="freeze" />
-      <text x="24" y="768" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| DNA Methylation | Pending | 0 / 3 |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="4.45s" fill="freeze" />
-      <text x="24" y="792" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| RNA-seq | Pending | 0 / 3 |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="4.60s" fill="freeze" />
-      <text x="24" y="840" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="4.75s" fill="freeze" />
-      <text x="24" y="888" style="fill: #FC9867;" class="terminal" xml:space="preserve">## Curation Methodology</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="4.90s" fill="freeze" />
-      <text x="24" y="936" style="fill: #A9DC76;" class="terminal" xml:space="preserve">Database curation follows a three-phase pipeline:</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.05s" fill="freeze" />
-      <text x="24" y="984" style="fill: #78DCE8;" class="terminal" xml:space="preserve">**Phase 1 — Systematic Compilation**</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.20s" fill="freeze" />
-      <text x="24" y="1008" style="fill: #A9DC76;" class="terminal" xml:space="preserve">Six large language models (LLMs) are queried using five standardized prompt strategies to identify candidate databases for each assay type. All models receive identical prompts to ensure comparability.</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.35s" fill="freeze" />
-      <text x="24" y="1056" style="fill: #78DCE8;" class="terminal" xml:space="preserve">**Phase 2 — Reproducibility &amp; Hallucination Testing**</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.50s" fill="freeze" />
-      <text x="24" y="1080" style="fill: #A9DC76;" class="terminal" xml:space="preserve">Each prompt is run three times per model at temperature = 0. Databases are scored by consistency across runs:</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.65s" fill="freeze" />
-      <text x="24" y="1128" style="fill: #78DCE8;" class="terminal" xml:space="preserve">- Appears in 3/3 runs → high confidence</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.80s" fill="freeze" />
-      <text x="24" y="1152" style="fill: #78DCE8;" class="terminal" xml:space="preserve">- Appears in 2/3 runs → moderate confidence</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.95s" fill="freeze" />
-      <text x="24" y="1176" style="fill: #78DCE8;" class="terminal" xml:space="preserve">- Appears in 1/3 runs → likely hallucinated</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="6.10s" fill="freeze" />
-      <text x="24" y="1224" style="fill: #78DCE8;" class="terminal" xml:space="preserve">**Phase 3 — Manual Validation**</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="6.25s" fill="freeze" />
-      <text x="24" y="1248" style="fill: #A9DC76;" class="terminal" xml:space="preserve">Surviving databases are verified for URL validity, data accessibility, metadata quality, and T2D relevance before inclusion in the package.</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="6.40s" fill="freeze" />
-      <text x="24" y="1296" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="6.55s" fill="freeze" />
-      <text x="24" y="1344" style="fill: #FC9867;" class="terminal" xml:space="preserve">## LLM Benchmark Panel</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="6.70s" fill="freeze" />
-      <text x="24" y="1392" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| Model | Developer | Query Method |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="6.85s" fill="freeze" />
-      <text x="24" y="1416" style="fill: #A9DC76;" class="terminal" xml:space="preserve">|---|---|---|</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="7.00s" fill="freeze" />
-      <text x="24" y="1440" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| Qwen | Alibaba | Manual |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="7.15s" fill="freeze" />
-      <text x="24" y="1464" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| GLM5 | Zhipu AI | Manual |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="7.30s" fill="freeze" />
-      <text x="24" y="1488" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| MiniMax-M2.7 | MiniMax | Manual |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="7.45s" fill="freeze" />
-      <text x="24" y="1512" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| Gemini 3.1 | Google | Manual |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="7.60s" fill="freeze" />
-      <text x="24" y="1536" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| Claude Opus 4.6 | Anthropic | API |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="7.75s" fill="freeze" />
-      <text x="24" y="1560" style="fill: #A9DC76;" class="terminal" xml:space="preserve">| GPT-4o | OpenAI | API |</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="7.90s" fill="freeze" />
-      <text x="24" y="1608" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="8.05s" fill="freeze" />
-      <text x="24" y="1656" style="fill: #FC9867;" class="terminal" xml:space="preserve">## Prompt Strategies</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="8.20s" fill="freeze" />
-      <text x="24" y="1704" style="fill: #A9DC76;" class="terminal" xml:space="preserve">Each model is queried using five prompt engineering strategies:</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="8.35s" fill="freeze" />
-      <text x="24" y="1752" style="fill: #A9DC76;" class="terminal" xml:space="preserve">1. **Zero-shot instruction** — direct instruction with output format constraints</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="8.50s" fill="freeze" />
-      <text x="24" y="1776" style="fill: #A9DC76;" class="terminal" xml:space="preserve">2. **Few-shot format control** — example-guided output formatting</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="8.65s" fill="freeze" />
-      <text x="24" y="1800" style="fill: #A9DC76;" class="terminal" xml:space="preserve">3. **Role-based precision boost** — bioinformatics expert persona framing</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="8.80s" fill="freeze" />
-      <text x="24" y="1824" style="fill: #A9DC76;" class="terminal" xml:space="preserve">4. **Guided filtering (chain-of-thought)** — step-by-step reasoning over database properties</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="8.95s" fill="freeze" />
-      <text x="24" y="1848" style="fill: #A9DC76;" class="terminal" xml:space="preserve">5. **Gap detection** — identifying databases absent from a known seed list</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="9.10s" fill="freeze" />
-      <text x="24" y="1896" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="9.25s" fill="freeze" />
-      <text x="24" y="1944" style="fill: #FC9867;" class="terminal" xml:space="preserve">## Repository Structure</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="9.40s" fill="freeze" />
-      <text x="24" y="1992" style="fill: #A9DC76;" class="terminal" xml:space="preserve">```</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="9.55s" fill="freeze" />
-      <text x="24" y="2016" style="fill: #A9DC76;" class="terminal" xml:space="preserve">regularDB/</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="9.70s" fill="freeze" />
-      <text x="24" y="2040" style="fill: #A9DC76;" class="terminal" xml:space="preserve">├── ATACseq_DBs/          # Raw LLM outputs for ATAC-seq (3 runs × 6 models)</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="9.85s" fill="freeze" />
-      <text x="24" y="2064" style="fill: #A9DC76;" class="terminal" xml:space="preserve">├── ChIPseq_DBs/          # Coming soon</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.00s" fill="freeze" />
-      <text x="24" y="2088" style="fill: #A9DC76;" class="terminal" xml:space="preserve">├── CUTandRUN_DBs/        # Coming soon</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.15s" fill="freeze" />
-      <text x="24" y="2112" style="fill: #A9DC76;" class="terminal" xml:space="preserve">├── DNAmethylation_DBs/   # Coming soon</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.30s" fill="freeze" />
-      <text x="24" y="2136" style="fill: #A9DC76;" class="terminal" xml:space="preserve">├── RNAseq_DBs/           # Coming soon</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.45s" fill="freeze" />
-      <text x="24" y="2160" style="fill: #A9DC76;" class="terminal" xml:space="preserve">├── LICENSE</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.60s" fill="freeze" />
-      <text x="24" y="2184" style="fill: #A9DC76;" class="terminal" xml:space="preserve">└── README.md</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.75s" fill="freeze" />
-      <text x="24" y="2208" style="fill: #A9DC76;" class="terminal" xml:space="preserve">```</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.90s" fill="freeze" />
-      <text x="24" y="2256" style="fill: #A9DC76;" class="terminal" xml:space="preserve">Each assay folder contains CSV files per model per run, named as:</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="11.05s" fill="freeze" />
-      <text x="24" y="2304" style="fill: #A9DC76;" class="terminal" xml:space="preserve">```</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="11.20s" fill="freeze" />
-      <text x="24" y="2328" style="fill: #A9DC76;" class="terminal" xml:space="preserve">{Model}_{Assay}_Run{N}.csv</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="11.35s" fill="freeze" />
-      <text x="24" y="2352" style="fill: #A9DC76;" class="terminal" xml:space="preserve">```</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="11.50s" fill="freeze" />
-      <text x="24" y="2400" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="11.65s" fill="freeze" />
-      <text x="24" y="2448" style="fill: #FC9867;" class="terminal" xml:space="preserve">## R Package</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="11.80s" fill="freeze" />
-      <text x="24" y="2496" style="fill: #A9DC76;" class="terminal" xml:space="preserve">The regularDB R package (in development) will provide:</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="11.95s" fill="freeze" />
-      <text x="24" y="2544" style="fill: #78DCE8;" class="terminal" xml:space="preserve">- `search_databases()` — query curated databases by assay type, tissue, or disease</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="12.10s" fill="freeze" />
-      <text x="24" y="2568" style="fill: #78DCE8;" class="terminal" xml:space="preserve">- `get_metadata()` — retrieve standardized metadata for any listed database</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="12.25s" fill="freeze" />
-      <text x="24" y="2592" style="fill: #78DCE8;" class="terminal" xml:space="preserve">- `benchmark_db()` — score database quality across QC, accessibility, and annotation metrics</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="12.40s" fill="freeze" />
-      <text x="24" y="2616" style="fill: #78DCE8;" class="terminal" xml:space="preserve">- Direct access wrappers for major databases (GEO, ENCODE, CMDGA, PanKbase, HPAP, etc.)</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="12.55s" fill="freeze" />
-      <text x="24" y="2664" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="12.70s" fill="freeze" />
-      <text x="24" y="2712" style="fill: #FC9867;" class="terminal" xml:space="preserve">## Citation</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="12.85s" fill="freeze" />
-      <text x="24" y="2760" style="fill: #A9DC76;" class="terminal" xml:space="preserve">If you use regularDB in your research, please cite:</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="13.00s" fill="freeze" />
-      <text x="24" y="2808" style="fill: #AB9DF2;" class="terminal" xml:space="preserve">&gt; Bha, H. et al. (2026). regularDB: A curated compendium of regulatory genomic datasets for T2D research. *In preparation.*</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="13.15s" fill="freeze" />
-      <text x="24" y="2856" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="13.30s" fill="freeze" />
-      <text x="24" y="2904" style="fill: #FC9867;" class="terminal" xml:space="preserve">## License</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="13.45s" fill="freeze" />
-      <text x="24" y="2952" style="fill: #A9DC76;" class="terminal" xml:space="preserve">This project is licensed under the [Apache License 2.0](LICENSE).</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="13.60s" fill="freeze" />
-      <text x="24" y="3000" style="fill: #78DCE8;" class="terminal" xml:space="preserve">---</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="13.75s" fill="freeze" />
-      <text x="24" y="3048" style="fill: #FC9867;" class="terminal" xml:space="preserve">## Contact</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="13.90s" fill="freeze" />
-      <text x="24" y="3096" style="fill: #78DCE8;" class="terminal" xml:space="preserve">**BDB-Genomics** · [GitHub](https://github.com/BDB-Genomics)</text>
-    </g>
-
-  </g>
+<svg width="820" height="1517" viewBox="0 0 820 1517" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white"/>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.2s" fill="freeze"/>
+  <text x="410" y="40" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#1a1a2e">regularDB</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.0999999999999999s" fill="freeze"/>
+  <text x="410" y="64" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#666">A curated, standardized, and benchmarked compendium of regulatory genomic datasets for T2D research.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.7999999999999998s" fill="freeze"/>
+  <rect x="180" y="80" width="100" height="22" rx="11" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+  <text x="230" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#0C447C">Apache 2.0</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.4s" fill="freeze"/>
+  <rect x="290" y="80" width="120" height="22" rx="11" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="350" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#633806">Active Development</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.0s" fill="freeze"/>
+  <rect x="420" y="80" width="80" height="22" rx="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="460" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#085041">5 Assays</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.6s" fill="freeze"/>
+  <rect x="510" y="80" width="90" height="22" rx="11" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="555" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#3C3489">6 LLM Models</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="4.2s" fill="freeze"/>
+  <line x1="40" y1="120" x2="780" y2="120" stroke="#ddd" stroke-width="1"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.7s" fill="freeze"/>
+  <rect x="40" y="135" width="740" height="80" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.2"/>
+  <text x="410" y="159" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0C447C">Overview</text>
+  <text x="54" y="179" font-family="system-ui,sans-serif" font-size="11" fill="#185FA5">regularDB is an R package that systematically curates and provides programmatic</text>
+  <text x="54" y="195" font-family="system-ui,sans-serif" font-size="11" fill="#185FA5">access to public regulatory genomics databases relevant to Type 2 Diabetes (T2D).</text>
+  <text x="54" y="211" font-family="system-ui,sans-serif" font-size="11" fill="#185FA5">Uses a multi-LLM benchmarking approach to identify, validate, and score databases.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="5.5s" fill="freeze"/>
+  <text x="40" y="250" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1a1a2e">Assay Coverage</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="6.2s" fill="freeze"/>
+  <rect x="60" y="262" width="140" height="18" rx="3" fill="#E1F5EE"/>
+  <text x="66" y="275" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#085041">Assay</text>
+  <rect x="204" y="262" width="100" height="18" rx="3" fill="#E1F5EE"/>
+  <text x="210" y="275" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#085041">Status</text>
+  <rect x="308" y="262" width="120" height="18" rx="3" fill="#E1F5EE"/>
+  <text x="314" y="275" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#085041">Runs Complete</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="6.75s" fill="freeze"/>
+  <text x="66" y="295" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#633806">ATAC-seq</text>
+  <text x="210" y="295" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#633806">In progress</text>
+  <text x="314" y="295" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#633806">1 / 3</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="7.3s" fill="freeze"/>
+  <text x="66" y="312" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">ChIP-seq</text>
+  <text x="210" y="312" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">Pending</text>
+  <text x="314" y="312" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">0 / 3</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="7.85s" fill="freeze"/>
+  <text x="66" y="329" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">CUT&amp;RUN</text>
+  <text x="210" y="329" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">Pending</text>
+  <text x="314" y="329" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">0 / 3</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="8.4s" fill="freeze"/>
+  <text x="66" y="346" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">DNA Methylation</text>
+  <text x="210" y="346" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">Pending</text>
+  <text x="314" y="346" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">0 / 3</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="8.950000000000001s" fill="freeze"/>
+  <text x="66" y="363" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">RNA-seq</text>
+  <text x="210" y="363" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">Pending</text>
+  <text x="314" y="363" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">0 / 3</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="9.500000000000002s" fill="freeze"/>
+  <line x1="40" y1="385" x2="780" y2="385" stroke="#ddd" stroke-width="1"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="10.100000000000001s" fill="freeze"/>
+  <text x="40" y="415" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1a1a2e">Curation Methodology</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="10.8s" fill="freeze"/>
+  <rect x="40" y="435" width="230" height="110" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+  <text x="155" y="459" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#3C3489">Phase 1 — LLM Querying</text>
+  <text x="54" y="479" font-family="system-ui,sans-serif" font-size="11" fill="#534AB7">6 LLMs queried using 5 standardized</text>
+  <text x="54" y="495" font-family="system-ui,sans-serif" font-size="11" fill="#534AB7">prompt strategies per assay type.</text>
+  <text x="54" y="511" font-family="system-ui,sans-serif" font-size="11" fill="#534AB7">All models receive identical prompts</text>
+  <text x="54" y="527" font-family="system-ui,sans-serif" font-size="11" fill="#534AB7">to ensure comparability.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="11.600000000000001s" fill="freeze"/>
+  <rect x="290" y="435" width="230" height="110" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="405" y="459" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#085041">Phase 2 — Reproducibility ×3</text>
+  <text x="304" y="479" font-family="system-ui,sans-serif" font-size="11" fill="#0F6E56">Each prompt run 3× at temp = 0.</text>
+  <text x="304" y="495" font-family="system-ui,sans-serif" font-size="11" fill="#0F6E56">3/3 runs → high confidence</text>
+  <text x="304" y="511" font-family="system-ui,sans-serif" font-size="11" fill="#0F6E56">2/3 runs → moderate confidence</text>
+  <text x="304" y="527" font-family="system-ui,sans-serif" font-size="11" fill="#0F6E56">1/3 runs → likely hallucinated</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="12.400000000000002s" fill="freeze"/>
+  <rect x="540" y="435" width="230" height="110" rx="10" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.2"/>
+  <text x="655" y="459" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#633806">Phase 3 — Manual Validation</text>
+  <text x="554" y="479" font-family="system-ui,sans-serif" font-size="11" fill="#854F0B">Surviving databases verified for:</text>
+  <text x="554" y="495" font-family="system-ui,sans-serif" font-size="11" fill="#854F0B">✓ URL validity</text>
+  <text x="554" y="511" font-family="system-ui,sans-serif" font-size="11" fill="#854F0B">✓ Data accessibility &amp; metadata</text>
+  <text x="554" y="527" font-family="system-ui,sans-serif" font-size="11" fill="#854F0B">✓ T2D relevance</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="13.200000000000003s" fill="freeze"/>
+  <line x1="272" y1="490" x2="288" y2="490" stroke="#aaa" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="522" y1="490" x2="538" y2="490" stroke="#aaa" stroke-width="1.5" marker-end="url(#arr)"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="13.800000000000002s" fill="freeze"/>
+  <line x1="40" y1="565" x2="780" y2="565" stroke="#ddd" stroke-width="1"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="14.400000000000002s" fill="freeze"/>
+  <text x="40" y="595" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1a1a2e">LLM Benchmark Panel</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="15.100000000000001s" fill="freeze"/>
+  <rect x="60" y="607" width="160" height="18" rx="3" fill="#E6F1FB"/>
+  <text x="66" y="620" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#0C447C">Model</text>
+  <rect x="224" y="607" width="120" height="18" rx="3" fill="#E6F1FB"/>
+  <text x="230" y="620" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#0C447C">Developer</text>
+  <rect x="348" y="607" width="100" height="18" rx="3" fill="#E6F1FB"/>
+  <text x="354" y="620" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#0C447C">Query Method</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="15.650000000000002s" fill="freeze"/>
+  <text x="66" y="640" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">Qwen</text>
+  <text x="230" y="640" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">Alibaba</text>
+  <text x="354" y="640" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">Manual</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="16.200000000000003s" fill="freeze"/>
+  <text x="66" y="658" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#085041">GLM5</text>
+  <text x="230" y="658" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#085041">Zhipu AI</text>
+  <text x="354" y="658" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#085041">Manual</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="16.750000000000004s" fill="freeze"/>
+  <text x="66" y="676" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#633806">MiniMax-M2.7</text>
+  <text x="230" y="676" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#633806">MiniMax</text>
+  <text x="354" y="676" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#633806">Manual</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="17.300000000000004s" fill="freeze"/>
+  <text x="66" y="694" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#712B13">Gemini 3.1</text>
+  <text x="230" y="694" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#712B13">Google</text>
+  <text x="354" y="694" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#712B13">Manual</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="17.850000000000005s" fill="freeze"/>
+  <text x="66" y="712" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#0C447C">Claude Opus 4.6</text>
+  <text x="230" y="712" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#0C447C">Anthropic</text>
+  <text x="354" y="712" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#0C447C">API</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="18.400000000000006s" fill="freeze"/>
+  <text x="66" y="730" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">GPT-4o</text>
+  <text x="230" y="730" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">OpenAI</text>
+  <text x="354" y="730" font-family="system-ui,sans-serif" font-size="10" font-weight="400" fill="#3C3489">API</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="18.950000000000006s" fill="freeze"/>
+  <line x1="40" y1="760" x2="780" y2="760" stroke="#ddd" stroke-width="1"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="19.550000000000008s" fill="freeze"/>
+  <text x="40" y="790" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1a1a2e">Prompt Strategies</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="20.250000000000007s" fill="freeze"/>
+  <circle cx="60" cy="811" r="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="60" y="815" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#3C3489">1</text>
+  <text x="80" y="815" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#333">Zero-shot instruction</text>
+  <text x="80" y="830" font-family="system-ui,sans-serif" font-size="10" fill="#888">Direct instruction with output format constraints</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="20.85000000000001s" fill="freeze"/>
+  <circle cx="60" cy="849" r="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="60" y="853" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#085041">2</text>
+  <text x="80" y="853" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#333">Few-shot format control</text>
+  <text x="80" y="868" font-family="system-ui,sans-serif" font-size="10" fill="#888">Example-guided output formatting</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="21.45000000000001s" fill="freeze"/>
+  <circle cx="60" cy="887" r="10" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="60" y="891" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#633806">3</text>
+  <text x="80" y="891" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#333">Role-based precision boost</text>
+  <text x="80" y="906" font-family="system-ui,sans-serif" font-size="10" fill="#888">Bioinformatics expert persona framing</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="22.05000000000001s" fill="freeze"/>
+  <circle cx="60" cy="925" r="10" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="60" y="929" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#712B13">4</text>
+  <text x="80" y="929" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#333">Chain-of-thought filtering</text>
+  <text x="80" y="944" font-family="system-ui,sans-serif" font-size="10" fill="#888">Step-by-step reasoning over database properties</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="22.650000000000013s" fill="freeze"/>
+  <circle cx="60" cy="963" r="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+  <text x="60" y="967" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#0C447C">5</text>
+  <text x="80" y="967" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#333">Gap detection</text>
+  <text x="80" y="982" font-family="system-ui,sans-serif" font-size="10" fill="#888">Identifying databases absent from a known seed list</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="23.250000000000014s" fill="freeze"/>
+  <line x1="40" y1="1010" x2="780" y2="1010" stroke="#ddd" stroke-width="1"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="23.850000000000016s" fill="freeze"/>
+  <text x="40" y="1035" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1a1a2e">Repository Structure</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="24.550000000000015s" fill="freeze"/>
+  <rect x="50" y="1050" width="400" height="160" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="0.8"/>
+  <text x="62" y="1066" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">regularDB/</text>
+  <text x="62" y="1084" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">├── ATACseq_DBs/          # Raw LLM outputs (3 runs × 6 models)</text>
+  <text x="62" y="1102" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">├── ChIPseq_DBs/          # Coming soon</text>
+  <text x="62" y="1120" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">├── CUTandRUN_DBs/        # Coming soon</text>
+  <text x="62" y="1138" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">├── DNAmethylation_DBs/   # Coming soon</text>
+  <text x="62" y="1156" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">├── RNAseq_DBs/           # Coming soon</text>
+  <text x="62" y="1174" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">├── LICENSE</text>
+  <text x="62" y="1192" font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#24292f">└── README.md</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="25.250000000000014s" fill="freeze"/>
+  <line x1="40" y1="1224" x2="780" y2="1224" stroke="#ddd" stroke-width="1"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="25.850000000000016s" fill="freeze"/>
+  <text x="40" y="1254" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1a1a2e">R Package Functions</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="26.550000000000015s" fill="freeze"/>
+  <rect x="50" y="1264" width="210" height="28" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="60" y="1282" font-family="SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" fill="#3C3489">search_databases()</text>
+  <text x="270" y="1282" font-family="system-ui,sans-serif" font-size="11" fill="#555">Query curated databases by assay type, tissue, or disease</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="27.150000000000016s" fill="freeze"/>
+  <rect x="50" y="1300" width="210" height="28" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="60" y="1318" font-family="SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" fill="#085041">get_metadata()</text>
+  <text x="270" y="1318" font-family="system-ui,sans-serif" font-size="11" fill="#555">Retrieve standardized metadata for any listed database</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="27.750000000000018s" fill="freeze"/>
+  <rect x="50" y="1336" width="210" height="28" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="60" y="1354" font-family="SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" fill="#633806">benchmark_db()</text>
+  <text x="270" y="1354" font-family="system-ui,sans-serif" font-size="11" fill="#555">Score database quality across QC, accessibility, and annotation</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="28.35000000000002s" fill="freeze"/>
+  <line x1="40" y1="1387" x2="780" y2="1387" stroke="#ddd" stroke-width="1"/>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="28.95000000000002s" fill="freeze"/>
+  <text x="40" y="1412" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1a1a2e">Citation</text>
+  <text x="40" y="1434" font-family="system-ui,sans-serif" font-size="11" fill="#555" font-style="italic">Bha, H. et al. (2026). regularDB: A curated compendium of regulatory genomic datasets for T2D research. In preparation.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="29.65000000000002s" fill="freeze"/>
+  <line x1="40" y1="1467" x2="780" y2="1467" stroke="#ddd" stroke-width="0.5"/>
+  <text x="410" y="1487" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#aaa">BDB-Genomics · github.com/BDB-Genomics/regularDB · Apache 2.0</text>
+</g>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
 </svg>

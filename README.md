@@ -1,10 +1,11 @@
-<img width="676" height="404" alt="regularDB" src="https://github.com/user-attachments/assets/162f9807-6733-4436-a886-c1242429eed0" />
+<p align="center">
+  <img src="assets/regularDB_animated_pipeline.svg" alt="regularDB Pipeline" width="680" />
+</p>
 
-<img width="676" height="404" alt="regularDB" src="assets/regularDB_animated_pipeline.svg" />
 # regularDB
 
 <p align="center">
-  <img src="assets/readme_animation.svg" alt="Animated README Terminal" width="900" />
+  <img src="assets/readme_animation.svg" alt="regularDB Animated Overview" width="820" />
 </p>
 > A curated, standardized, and benchmarked compendium of regulatory genomic datasets for Type 2 Diabetes (T2D) research.
 
