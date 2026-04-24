@@ -1,121 +1,190 @@
-<svg width="100%" viewBox="0 0 680 342.63" role="img" style="" xmlns="http://www.w3.org/2000/svg">
-<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">regularDB curation pipeline</title>
-<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Animated SVG showing the regularDB three-phase curation pipeline: LLM querying, reproducibility testing, and manual validation leading to the R package.</desc>
-<defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </marker>
-  
-<mask id="imagine-text-gaps-tkk207" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="342.63" fill="white"/><rect x="259.2364501953125" y="8.185172080993652" width="161.52713012695312" height="21.06586265563965" fill="black" rx="2"/><rect x="91.65926361083984" y="50.81068801879883" width="56.68146514892578" height="22.37862205505371" fill="black" rx="2"/><rect x="77.07670593261719" y="70.77983093261719" width="85.84658813476562" height="21.06586265563965" fill="black" rx="2"/><rect x="58.238616943359375" y="101.18517303466797" width="124.35417175292969" height="21.06586265563965" fill="black" rx="2"/><rect x="290.248046875" y="50.81068801879883" width="59.50389862060547" height="22.37862205505371" fill="black" rx="2"/><rect x="262.96453857421875" y="70.77983093261719" width="114.07090759277344" height="21.06586265563965" fill="black" rx="2"/><rect x="270.3050537109375" y="101.18517303466797" width="99.38988494873047" height="21.06586265563965" fill="black" rx="2"/><rect x="274.327392578125" y="124.49793243408203" width="31.345224380493164" height="17.127586364746094" fill="black" rx="2"/><rect x="308.97674560546875" y="124.49793243408203" width="22.2215518951416" height="17.127586364746094" fill="black" rx="2"/><rect x="339.1080017089844" y="124.49793243408203" width="22.48410415649414" height="17.127586364746094" fill="black" rx="2"/><rect x="490.4012145996094" y="50.81068801879883" width="59.19758987426758" height="22.37862205505371" fill="black" rx="2"/><rect x="466.4761657714844" y="70.77983093261719" width="107.04763793945312" height="18.440345764160156" fill="black" rx="2"/><rect x="452" y="101.18517303466797" width="66.41776275634766" height="19.753104209899902" fill="black" rx="2"/><rect x="452" y="116.18517303466797" width="97.46450805664062" height="19.753104209899902" fill="black" rx="2"/><rect x="452" y="131.18516540527344" width="101.84036254882812" height="19.753104209899902" fill="black" rx="2"/><rect x="346" y="136.18516540527344" width="71.73443222045898" height="18.440345764160156" fill="black" rx="2"/><rect x="302.48089599609375" y="205.81068420410156" width="75.0382080078125" height="22.37862205505371" fill="black" rx="2"/><rect x="307.0755615234375" y="225.7798309326172" width="65.84889602661133" height="21.06586265563965" fill="black" rx="2"/><rect x="298.0393981933594" y="258.1851806640625" width="84.75262451171875" height="21.06586265563965" fill="black" rx="2"/><rect x="70.63541412353516" y="280" width="54.72916793823242" height="16.5" fill="black" rx="2"/><rect x="150.2291717529297" y="280" width="51.541664123535156" height="16.5" fill="black" rx="2"/><rect x="225.1458282470703" y="280" width="57.70833206176758" height="16.5" fill="black" rx="2"/><rect x="307.875" y="280" width="68.25" height="16.5" fill="black" rx="2"/><rect x="401.6041564941406" y="280" width="50.79166793823242" height="16.5" fill="black" rx="2"/><rect x="484.5208435058594" y="280" width="60.95833206176758" height="16.5" fill="black" rx="2"/><rect x="229.34930419921875" y="316.1851806640625" width="221.34515380859375" height="18.440345764160156" fill="black" rx="2"/></mask></defs>
+<svg width="680" height="340" viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>regularDB curation pipeline</title>
+<desc>Three-phase curation pipeline: LLM querying, reproducibility testing, and manual validation leading to the regularDB R package.</desc>
 
-<!-- Background label: pipeline -->
-<text x="340" y="22" text-anchor="middle" opacity="0.45" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.45;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">regularDB curation pipeline</text>
+<!-- Background -->
+<rect width="680" height="340" fill="#0d1117"/>
 
-<!-- ── Phase 1: LLM Querying ── -->
-<g style="animation-delay:0.1s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-    <rect x="40" y="40" width="160" height="52" rx="8" stroke-width="0.5" style="fill:rgb(60, 52, 137);stroke:rgb(175, 169, 236);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="120" y="62" text-anchor="middle" dominant-baseline="central" style="fill:rgb(206, 203, 246);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Phase 1</text>
-    <text x="120" y="80" text-anchor="middle" dominant-baseline="central" style="fill:rgb(175, 169, 236);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">LLM querying</text>
-  </g>
+<!-- Title -->
+<text x="340" y="22" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b949e">regularDB curation pipeline</text>
+
+<!-- ── Phase 1 box ── -->
+<g>
+  <rect x="40" y="40" width="160" height="52" rx="8" fill="#26215C" stroke="#534AB7" stroke-width="0.5">
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.1s" fill="freeze"/>
+  </rect>
+  <text x="120" y="62" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="500" fill="#CECBF6" opacity="0">
+    Phase 1
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.1s" fill="freeze"/>
+  </text>
+  <text x="120" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#AFA9EC" opacity="0">
+    LLM querying
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.1s" fill="freeze"/>
+  </text>
 </g>
 
-<!-- 6 model dots under phase 1 -->
-<g style="animation-delay:0.3s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <text x="120" y="115" text-anchor="middle" opacity="0.6" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">6 models · 5 prompts</text>
-  <circle cx="68" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" style="fill:rgb(175, 169, 236);stroke:rgb(83, 74, 183);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="88" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" style="fill:rgb(175, 169, 236);stroke:rgb(83, 74, 183);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="108" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" style="fill:rgb(175, 169, 236);stroke:rgb(83, 74, 183);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="128" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" style="fill:rgb(175, 169, 236);stroke:rgb(83, 74, 183);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="148" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" style="fill:rgb(175, 169, 236);stroke:rgb(83, 74, 183);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="168" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" style="fill:rgb(175, 169, 236);stroke:rgb(83, 74, 183);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-</g>
+<!-- 6 model dots -->
+<text x="120" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#8b949e" opacity="0">
+  6 models · 5 prompts
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.4s" fill="freeze"/>
+</text>
+<circle cx="68"  cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.5s" fill="freeze"/></circle>
+<circle cx="88"  cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.6s" fill="freeze"/></circle>
+<circle cx="108" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.7s" fill="freeze"/></circle>
+<circle cx="128" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.8s" fill="freeze"/></circle>
+<circle cx="148" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.9s" fill="freeze"/></circle>
+<circle cx="168" cy="135" r="7" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.0s" fill="freeze"/></circle>
 
-<!-- Arrow 1→2 -->
-<g style="animation-delay:0.55s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <line x1="202" y1="66" x2="238" y2="66" stroke="#888780" stroke-width="1" marker-end="url(#arrow)" style="animation-delay:0.55s;fill:rgb(0, 0, 0);stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:1px;stroke-dasharray:60px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-</g>
+<!-- Arrow 1→2 animated draw -->
+<line x1="202" y1="66" x2="238" y2="66" stroke="#555" stroke-width="1" marker-end="url(#arr)" stroke-dasharray="40" stroke-dashoffset="40">
+  <animate attributeName="stroke-dashoffset" from="40" to="0" dur="0.4s" begin="1.1s" fill="freeze"/>
+</line>
 
-<!-- ── Phase 2: 3× Runs ── -->
-<g style="animation-delay:0.65s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-    <rect x="240" y="40" width="160" height="52" rx="8" stroke-width="0.5" style="fill:rgb(8, 80, 65);stroke:rgb(93, 202, 165);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="320" y="62" text-anchor="middle" dominant-baseline="central" style="fill:rgb(159, 225, 203);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Phase 2</text>
-    <text x="320" y="80" text-anchor="middle" dominant-baseline="central" style="fill:rgb(93, 202, 165);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Reproducibility × 3</text>
-  </g>
-</g>
+<!-- ── Phase 2 box ── -->
+<rect x="240" y="40" width="160" height="52" rx="8" fill="#04342C" stroke="#0F6E56" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.2s" fill="freeze"/>
+</rect>
+<text x="320" y="62" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="500" fill="#9FE1CB" opacity="0">
+  Phase 2
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.2s" fill="freeze"/>
+</text>
+<text x="320" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#5DCAA5" opacity="0">
+  Reproducibility × 3
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.2s" fill="freeze"/>
+</text>
 
-<!-- Run indicators -->
-<g style="animation-delay:0.85s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <text x="320" y="115" text-anchor="middle" opacity="0.6" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">temperature = 0</text>
-  <!-- Run 1: done -->
-  <rect x="272" y="124" width="36" height="20" rx="10" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5" style="fill:rgb(159, 225, 203);stroke:rgb(15, 110, 86);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="290" y="137" text-anchor="middle" font-size="11" fill="#085041" font-weight="500" style="fill:rgb(8, 80, 65);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:auto">R1 ✓</text>
-  <!-- Run 2: pending pulse -->
-  <rect x="302" y="124" width="36" height="20" rx="10" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5" style="fill:rgb(225, 245, 238);stroke:rgb(93, 202, 165);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.999107;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="320" y="137" text-anchor="middle" font-size="11" fill="#0F6E56" font-weight="500" style="fill:rgb(15, 110, 86);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:auto">R2</text>
-  <!-- Run 3: pending pulse -->
-  <rect x="332" y="124" width="36" height="20" rx="10" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5" style="animation-delay:0.4s;fill:rgb(225, 245, 238);stroke:rgb(93, 202, 165);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.915012;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="350" y="137" text-anchor="middle" font-size="11" fill="#0F6E56" font-weight="500" style="fill:rgb(15, 110, 86);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:auto">R3</text>
-</g>
+<!-- Run badges -->
+<text x="320" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#8b949e" opacity="0">
+  temperature = 0
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.4s" fill="freeze"/>
+</text>
+
+<!-- R1 done -->
+<rect x="272" y="124" width="36" height="20" rx="10" fill="#085041" stroke="#5DCAA5" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.5s" fill="freeze"/>
+</rect>
+<text x="290" y="137" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#9FE1CB" opacity="0">
+  R1 ✓
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.5s" fill="freeze"/>
+</text>
+
+<!-- R2 pending pulse -->
+<rect x="302" y="124" width="36" height="20" rx="10" fill="#04342C" stroke="#5DCAA5" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.6s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;0.4;1" dur="2s" begin="2.2s" repeatCount="indefinite"/>
+</rect>
+<text x="320" y="137" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#5DCAA5" opacity="0">
+  R2
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.6s" fill="freeze"/>
+</text>
+
+<!-- R3 pending pulse -->
+<rect x="332" y="124" width="36" height="20" rx="10" fill="#04342C" stroke="#5DCAA5" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.7s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;0.4;1" dur="2s" begin="2.6s" repeatCount="indefinite"/>
+</rect>
+<text x="350" y="137" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#5DCAA5" opacity="0">
+  R3
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.7s" fill="freeze"/>
+</text>
 
 <!-- Arrow 2→3 -->
-<g style="animation-delay:1.0s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <line x1="402" y1="66" x2="438" y2="66" stroke="#888780" stroke-width="1" marker-end="url(#arrow)" style="animation-delay:1.0s;fill:rgb(0, 0, 0);stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:1px;stroke-dasharray:60px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-</g>
+<line x1="402" y1="66" x2="438" y2="66" stroke="#555" stroke-width="1" marker-end="url(#arr)" stroke-dasharray="40" stroke-dashoffset="40">
+  <animate attributeName="stroke-dashoffset" from="40" to="0" dur="0.4s" begin="1.9s" fill="freeze"/>
+</line>
 
-<!-- ── Phase 3: Validation ── -->
-<g style="animation-delay:1.1s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-    <rect x="440" y="40" width="160" height="52" rx="8" stroke-width="0.5" style="fill:rgb(99, 56, 6);stroke:rgb(239, 159, 39);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="520" y="62" text-anchor="middle" dominant-baseline="central" style="fill:rgb(250, 199, 117);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Phase 3</text>
-    <text x="520" y="80" text-anchor="middle" dominant-baseline="central" style="fill:rgb(239, 159, 39);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Manual validation</text>
-  </g>
-</g>
+<!-- ── Phase 3 box ── -->
+<rect x="440" y="40" width="160" height="52" rx="8" fill="#412402" stroke="#854F0B" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.0s" fill="freeze"/>
+</rect>
+<text x="520" y="62" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="500" fill="#FAC775" opacity="0">
+  Phase 3
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.0s" fill="freeze"/>
+</text>
+<text x="520" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#EF9F27" opacity="0">
+  Manual validation
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.0s" fill="freeze"/>
+</text>
 
-<!-- Validation checks -->
-<g style="animation-delay:1.3s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <text x="456" y="115" font-size="11" fill="#854F0B" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">✓ URL live</text>
-  <text x="456" y="130" font-size="11" fill="#854F0B" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">✓ T2D evidence</text>
-  <text x="456" y="145" font-size="11" fill="#854F0B" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">✓ API accessible</text>
-</g>
+<!-- Validation checks appear one by one -->
+<text x="456" y="115" font-family="system-ui,sans-serif" font-size="10" fill="#EF9F27" opacity="0">✓ URL live
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.3s" fill="freeze"/>
+</text>
+<text x="456" y="130" font-family="system-ui,sans-serif" font-size="10" fill="#EF9F27" opacity="0">✓ T2D evidence
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.6s" fill="freeze"/>
+</text>
+<text x="456" y="145" font-family="system-ui,sans-serif" font-size="10" fill="#EF9F27" opacity="0">✓ API accessible
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.9s" fill="freeze"/>
+</text>
 
-<!-- ── Down arrow to output ── -->
-<g style="animation-delay:1.5s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <line x1="340" y1="96" x2="340" y2="192" stroke="#888780" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)" mask="url(#imagine-text-gaps-tkk207)" style="fill:rgb(0, 0, 0);stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:1px;stroke-dasharray:4px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="350" y="150" font-size="11" opacity="0.5" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">curated list</text>
-</g>
+<!-- Down arrow -->
+<line x1="340" y1="96" x2="340" y2="192" stroke="#555" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr)" stroke-dashoffset="100" stroke-dasharray="4 3 100">
+  <animate attributeName="opacity" from="0" to="0.6" dur="0.4s" begin="3.1s" fill="freeze"/>
+</line>
+<text x="350" y="152" font-family="system-ui,sans-serif" font-size="10" fill="#8b949e" opacity="0">
+  curated list
+  <animate attributeName="opacity" from="0" to="0.6" dur="0.4s" begin="3.2s" fill="freeze"/>
+</text>
 
-<!-- ── R Package output ── -->
-<g style="animation-delay:1.7s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-    <rect x="240" y="195" width="200" height="52" rx="8" stroke-width="0.5" style="fill:rgb(12, 68, 124);stroke:rgb(133, 183, 235);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="340" y="217" text-anchor="middle" dominant-baseline="central" style="fill:rgb(181, 212, 244);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">regularDB</text>
-    <text x="340" y="235" text-anchor="middle" dominant-baseline="central" style="fill:rgb(133, 183, 235);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">R package</text>
-  </g>
-  <!-- spinning orbit ring -->
-  <circle cx="340" cy="221" r="32" fill="none" stroke="#85B7EB" stroke-width="0.5" stroke-dasharray="3 4" style="fill:none;stroke:rgb(133, 183, 235);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-dasharray:3px, 4px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-</g>
+<!-- ── R package box ── -->
+<rect x="240" y="195" width="200" height="52" rx="8" fill="#042C53" stroke="#185FA5" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.3s" fill="freeze"/>
+</rect>
+<text x="340" y="217" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="500" fill="#B5D4F4" opacity="0">
+  regularDB
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.3s" fill="freeze"/>
+</text>
+<text x="340" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#85B7EB" opacity="0">
+  R package
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.3s" fill="freeze"/>
+</text>
+
+<!-- Spinning orbit ring -->
+<circle cx="340" cy="221" r="32" fill="none" stroke="#378ADD" stroke-width="0.5" stroke-dasharray="3 4" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.5s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="rotate" from="0 340 221" to="360 340 221" dur="8s" begin="3.5s" repeatCount="indefinite"/>
+</circle>
 
 <!-- ── Assay badges ── -->
-<g style="animation-delay:1.9s;fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-  <text x="340" y="272" text-anchor="middle" opacity="0.5" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">5 assay types</text>
-  <rect x="62" y="280" width="72" height="18" rx="9" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5" style="fill:rgb(238, 237, 254);stroke:rgb(83, 74, 183);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="98" y="292" text-anchor="middle" font-size="10" fill="#3C3489" font-weight="500" style="fill:rgb(60, 52, 137);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:auto">ATAC-seq</text>
-  <rect x="142" y="280" width="68" height="18" rx="9" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5" style="fill:rgb(225, 245, 238);stroke:rgb(15, 110, 86);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="176" y="292" text-anchor="middle" font-size="10" fill="#085041" font-weight="500" style="fill:rgb(8, 80, 65);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:auto">ChIP-seq</text>
-  <rect x="218" y="280" width="72" height="18" rx="9" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5" style="fill:rgb(250, 238, 218);stroke:rgb(133, 79, 11);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="254" y="292" text-anchor="middle" font-size="10" fill="#633806" font-weight="500" style="fill:rgb(99, 56, 6);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:auto">CUT&amp;RUN</text>
-  <rect x="298" y="280" width="88" height="18" rx="9" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5" style="fill:rgb(250, 236, 231);stroke:rgb(153, 60, 29);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="342" y="292" text-anchor="middle" font-size="10" fill="#712B13" font-weight="500" style="fill:rgb(113, 43, 19);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:auto">DNA methyl.</text>
-  <rect x="394" y="280" width="66" height="18" rx="9" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5" style="fill:rgb(230, 241, 251);stroke:rgb(24, 95, 165);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="427" y="292" text-anchor="middle" font-size="10" fill="#0C447C" font-weight="500" style="fill:rgb(12, 68, 124);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:auto">RNA-seq</text>
-  <!-- in progress badge -->
-  <rect x="474" y="280" width="82" height="18" rx="9" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5" style="fill:rgb(250, 238, 218);stroke:rgb(133, 79, 11);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.999107;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="515" y="292" text-anchor="middle" font-size="10" fill="#633806" font-weight="500" style="fill:rgb(99, 56, 6);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:auto">in progress</text>
-</g>
+<text x="340" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#8b949e" opacity="0">
+  5 assay types
+  <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.7s" fill="freeze"/>
+</text>
 
-<!-- bottom line -->
-<line x1="40" y1="315" x2="640" y2="315" stroke="#D3D1C7" stroke-width="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(211, 209, 199);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="340" y="330" text-anchor="middle" opacity="0.4" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">github.com/BDB-Genomics/regularDB</text>
+<rect x="62"  y="280" width="72" height="18" rx="9" fill="#26215C" stroke="#534AB7" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.8s" fill="freeze"/></rect>
+<text x="98"  y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#CECBF6" opacity="0">ATAC-seq<animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.8s" fill="freeze"/></text>
+
+<rect x="142" y="280" width="68" height="18" rx="9" fill="#04342C" stroke="#0F6E56" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.95s" fill="freeze"/></rect>
+<text x="176" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#9FE1CB" opacity="0">ChIP-seq<animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.95s" fill="freeze"/></text>
+
+<rect x="218" y="280" width="72" height="18" rx="9" fill="#412402" stroke="#854F0B" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.1s" fill="freeze"/></rect>
+<text x="254" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#FAC775" opacity="0">CUT&amp;RUN<animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.1s" fill="freeze"/></text>
+
+<rect x="298" y="280" width="88" height="18" rx="9" fill="#4A1B0C" stroke="#993C1D" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.25s" fill="freeze"/></rect>
+<text x="342" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#F5C4B3" opacity="0">DNA methyl.<animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.25s" fill="freeze"/></text>
+
+<rect x="394" y="280" width="66" height="18" rx="9" fill="#042C53" stroke="#185FA5" stroke-width="0.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.4s" fill="freeze"/></rect>
+<text x="427" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#B5D4F4" opacity="0">RNA-seq<animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.4s" fill="freeze"/></text>
+
+<!-- in progress badge pulsing -->
+<rect x="468" y="280" width="82" height="18" rx="9" fill="#412402" stroke="#854F0B" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.55s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" begin="5s" repeatCount="indefinite"/>
+</rect>
+<text x="509" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#EF9F27" opacity="0">
+  in progress
+  <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.55s" fill="freeze"/>
+</text>
+
+<!-- bottom line + credit -->
+<line x1="40" y1="315" x2="640" y2="315" stroke="#30363d" stroke-width="0.5"/>
+<text x="340" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#484f58">github.com/BDB-Genomics/regularDB</text>
+
+<!-- Arrow marker def -->
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
 </svg>
