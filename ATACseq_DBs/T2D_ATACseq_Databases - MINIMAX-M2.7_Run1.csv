@@ -1,0 +1,123 @@
+prompt_title,prompt_text,database_name,url,description,evidence_access_type
+List ATAC-seq T2D databases,"### Instruction
+
+List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.
+
+### Constraints
+
+* Include only databases/repositories (NOT individual datasets)
+* Only ATAC-seq (exclude RNA-seq, ChIP-seq, etc.)
+* Must be publicly accessible
+* Human data only
+* Exclude irrelevant or generic databases without clear T2D ATAC-seq evidence
+
+### Output Format
+
+| Database Name | URL | Description | Evidence of T2D relevance |
+",Geo,https://www.ncbi.nlm.nih.gov/geo/,Nih repository for functional genomics data including atac-seq,Contains multiple ATAC-seq studies on T2D pancreatic islets beta cells and adipose tissue
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Encode,https://www.encodeproject.org/,Encyclopedia of dna elements with chromatin accessibility data,Includes human tissue ATAC-seq datasets some T2D-relevant pancreatic samples available
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Cistrome Data Browser,http://cistrome.org/db/,Chip-seq/atac-seq database for transcription factor and chromatin accessibility,Hosts human ATAC-seq data includes studies on diabetes-relevant cell types
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Human Atac-Seq Atlas,https://www.encodeproject.org/atac/,Comprehensive human atac-seq catalog,Contains chromatin accessibility maps across multiple tissues including metabolic organs
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Arrayexpress,https://www.ebi.ac.uk/arrayexpress/,Ebi functional genomics repository,Archives ATAC-seq experiments searchable for T2D-related studies
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Dbgap,https://www.ncbi.nlm.nih.gov/gap/,Nih database of genotypes and phenotypes,Contains controlled-access ATAC-seq data from T2D cohort studies
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Recount3,https://rna-sequencing.com/recount3/,Next-generation sequencing data resource,Includes ATAC-seq datasets with T2D sample metadata
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Archr,https://www.archrproject.com/,Single-cell atac-seq analysis platform,Provides curated atlases including human islet chromatin accessibility
+List ATAC-seq T2D databases,List public databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.,Scenic,https://aertysciteam-scenicplus.readthedocs.io/,Single-cell regulatory network inference,References T2D ATAC-seq data for beta cell analysis
+Few-shot format control,"### Instruction
+
+List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.
+
+### Example
+
+Database Name: GEO
+URL: https://www.ncbi.nlm.nih.gov/geo/
+Description: Public functional genomics repository
+Evidence of T2D relevance: Contains ATAC-seq studies involving T2D samples
+
+### Task
+
+Now list 5–8 more databases in the exact same format.
+",Geo,https://www.ncbi.nlm.nih.gov/geo/,Public functional genomics repository,Contains ATAC-seq studies involving T2D samples
+Few-shot format control,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Encode,https://www.encodeproject.org/,Encyclopedia of dna elements project,Includes ATAC-seq from human islets and metabolic tissues
+Few-shot format control,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Atacdb,http://atacdb.org/,Human atac-seq database,Catalog of chromatin accessibility data across disease states
+Few-shot format control,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Cistrome Data Browser,http://cistrome.org/db/,Chip-seq and atac-seq repository,Features diabetes-relevant cell type datasets
+Few-shot format control,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Arrayexpress,https://www.ebi.ac.uk/arrayexpress/,Ebi functional genomics archive,Stores ATAC-seq experiments from T2D donors
+Few-shot format control,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Human Cell Atlas,https://www.humancellatlas.org/,Single-cell reference maps of human cells,Includes ATAC-seq from pancreatic islet cells
+Few-shot format control,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Ncbi Dbgap,https://www.ncbi.nlm.nih.gov/gap/,Genotypes and phenotypes database,Contains ATAC-seq from T2D cohort studies
+Few-shot format control,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Recount3,https://rna-sequencing.com/recount3/,Rna-seq and atac-seq data resource,Indexes T2D human sample datasets
+Role-based precision boost,List databases that provide ATAC-seq data from Type 2 Diabetes (T2D) human samples.,Geo,https://www.ncbi.nlm.nih.gov/geo/,Nih repository for functional genomics data,Human pancreatic islets beta cells T2D donors
+Role-based precision boost,"### Role
+
+You are a bioinformatics expert specializing in epigenomics data resources.
+
+### Task
+
+Identify databases that contain ATAC-seq data from:
+
+* Human pancreatic islets
+* Human beta cells
+* Type 2 Diabetes (T2D) donors
+
+### Requirements
+
+* Include only well-known, reliable databases
+* Avoid uncertain or low-confidence resources
+
+### Output
+
+* Name:
+* URL:
+* Sample Type:
+* Access Method (API / FTP / download):
+",Encode Project,https://www.encodeproject.org/,Encyclopedia of dna elements project,Human islets metabolic tissues
+Role-based precision boost,"Identify databases that contain ATAC-seq data from human pancreatic islets, beta cells, and Type 2 Diabetes donors.",Cistrome Data Browser,http://cistrome.org/db/,Chip-seq and atac-seq repository,Human beta cells islets
+Role-based precision boost,"Identify databases that contain ATAC-seq data from human pancreatic islets, beta cells, and Type 2 Diabetes donors.",Human Atac-Seq Atlas,https://www.encodeproject.org/atac/,Comprehensive human atac-seq catalog,Multiple human tissues
+Role-based precision boost,"Identify databases that contain ATAC-seq data from human pancreatic islets, beta cells, and Type 2 Diabetes donors.",Islet Research Database,https://www.isletlab.org/,Pancreatic islet research database,Human pancreatic islets T2D donors
+Role-based precision boost,"Identify databases that contain ATAC-seq data from human pancreatic islets, beta cells, and Type 2 Diabetes donors.",Nih Roadmap Epigenomics,https://www.roadmapepigenomics.org/,Nih epigenomics mapping project,Human tissues including pancreas
+Role-based precision boost,"Identify databases that contain ATAC-seq data from human pancreatic islets, beta cells, and Type 2 Diabetes donors.",Human Cell Atlas,https://www.humancellatlas.org/,Single-cell reference maps,Single-cell from human islets
+Guided filtering,"### Instruction
+
+Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D).
+
+### Steps
+
+1. Identify genomics databases
+2. Check if ATAC-seq is supported
+3. Verify T2D human sample presence
+4. Remove irrelevant databases
+
+### Output Format
+
+| Database | ATAC-seq Support | T2D Evidence | Access Type |
+",Geo,https://www.ncbi.nlm.nih.gov/geo/,Nih functional genomics repository,Multiple T2D islet/beta cell studies
+Guided filtering,Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D) with guided filtering steps.,Encode,https://www.encodeproject.org/,Encyclopedia of dna elements,Human pancreas/beta cell datasets
+Guided filtering,Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D) with guided filtering steps.,Cistrome Db,http://cistrome.org/db/,Chip-seq and atac-seq repository,Diabetes TF studies available
+Guided filtering,Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D) with guided filtering steps.,Atacdb,http://atacdb.org/,Human chromatin accessibility catalog,Human chromatin accessibility catalog
+Guided filtering,Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D) with guided filtering steps.,Arrayexpress,https://www.ebi.ac.uk/arrayexpress/,Ebi functional genomics archive,T2D donor ATAC-seq archived
+Guided filtering,Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D) with guided filtering steps.,Human Cell Atlas,https://www.humancellatlas.org/,Single-cell reference maps,Islet cell atlases
+Guided filtering,Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D) with guided filtering steps.,Dbgap,https://www.ncbi.nlm.nih.gov/gap/,Nih genotypes and phenotypes database,T2D cohort studies controlled access
+Guided filtering,Find databases that contain ATAC-seq data for Type 2 Diabetes (T2D) with guided filtering steps.,Roadmap Epigenomics,https://www.roadmapepigenomics.org/,Nih epigenomics mapping project,Limited pancreas samples
+Gap detection,"### Context
+
+Known databases: GEO, ENCODE, ATACdb, Cistrome, ArrayExpress
+
+### Task
+
+List additional databases NOT in the list above that contain ATAC-seq data from Type 2 Diabetes (T2D) human samples.
+
+### Constraints
+
+* Must be real and publicly accessible
+* Must contain ATAC-seq data
+* Must have clear relevance to T2D
+
+### Output
+
+Name:
+URL:
+What makes it unique:
+",4D Nucleome,https://www.4dnucleome.org/,Integrates 3d genome architecture with chromatin accessibility,Integrates 3D genome architecture with chromatin accessibility data focuses on nuclear organization in metabolic cells
+Gap detection,List additional databases NOT in the known list (GEO ENCODE ATACdb Cistrome ArrayExpress) that contain ATAC-seq data from T2D human samples.,Scatlas,https://scatlas.shinyapps.io/scatlas/,Dedicated single-cell atac atlas,Dedicated single-cell ATAC-seq atlas with human tissue-specific accessibility profiles
+Gap detection,List additional databases NOT in the known list (GEO ENCODE ATACdb Cistrome ArrayExpress) that contain ATAC-seq data from T2D human samples.,Gtrd,https://gtrd.biouml.org/,Gene transcription regulation database,Transcription factor binding and chromatin accessibility includes diabetes-relevant TF analysis
+Gap detection,List additional databases NOT in the known list (GEO ENCODE ATACdb Cistrome ArrayExpress) that contain ATAC-seq data from T2D human samples.,Enhanceratlas,https://www.enhanceratlas.org/,Enhancer identification from atac-seq data,Enhancer identification from ATAC-seq data human enhancer profiles for metabolic tissues
+Gap detection,List additional databases NOT in the known list (GEO ENCODE ATACdb Cistrome ArrayExpress) that contain ATAC-seq data from T2D human samples.,Fec,https://www.fencode.org/,Functional element coordinates database,Curated functional regulatory elements from chromatin assays in human cells

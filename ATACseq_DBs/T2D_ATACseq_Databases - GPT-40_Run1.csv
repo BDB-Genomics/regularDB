@@ -1,0 +1,109 @@
+ Prompt,"### Task
+List public databases that host ATAC-seq data from human samples with Type 2 Diabetes (T2D).
+
+### Output Format
+| Database Name | URL | ATAC-seq Availability | Notes |
+
+### Constraints
+* Disease must be Type 2 Diabetes (T2D) only
+* ATAC-seq only (exclude RNA-seq, ChIP-seq, etc.)
+* Include only databases/repositories (not individual datasets)
+* Publicly accessible resources only
+* Minimum 5, maximum 10 entries",,,
+,,,,
+Database Name,URL,ATAC-seq Availability,Notes,
+dbGaP,dbGaP,Yes,Requires authorized access for some datasets.,
+GEO,GEO,Yes,"Public repository for functional genomics data, including ATAC-seq.",
+ArrayExpress,ArrayExpress,Yes,Provides links to raw sequence reads stored in ENA.,
+BioProject,BioProject,Yes,Aggregates data from multiple sequencing projects.,
+SRA,SRA,Yes,Largest repository for raw sequencing data.,
+Synapse,Synapse,Yes,"Platform for collaborative data sharing, including ATAC-seq.",
+Broad Institute,Broad Institute,Yes,Hosts ATAC-seq data as part of multi-omics studies.,
+ENCODE,ENCODE,Yes,"Comprehensive resource for epigenomic data, including ATAC-seq.",
+,,,,
+Prompt,"### Task                                                                                                                            
+                                                                                                                                       
+List public databases containing ATAC-seq data from human pancreatic islets or beta cells in Type 2 Diabetes (T2D).                 
+                                                                                                                                       
+### Output Format                                                                                                                   
+                                                                                                                                       
+Database Name:                                                                                                                      
+URL:                                                                                                                                
+Sample Type: Islets / Beta cells / Both                                                                                             
+Access: API / FTP / Direct download                                                                                                 
+Notes:        
+",,,
+,,,,
+Database Name,URL,Sample Type,Access,Notes
+Nature Genetics Study,Single cell chromatin accessibility identifies pancreatic islet cell type- and state-specific regulatory programs of diabetes risk,Islets,Direct download,Single nucleus ATAC-seq profiled pancreatic islet cells to identify cell type- and state-specific regulatory programs linked to T2D.
+Scientific Reports Study,ATAC-seq reveals alterations in open chromatin in pancreatic islets from subjects with type 2 diabetes,Islets,Direct download,"ATAC-seq profiled open chromatin in pancreatic islets from T2D and non-diabetic donors, showing chromatin landscape alterations."
+Molecular Metabolism Study,Single-cell ATAC-Seq in human pancreatic islets and deep learning upscaling of rare cells reveals cell-specific type 2 diabetes regulatory signatures,Islets / Beta cells,Direct download,Single-cell ATAC-seq and deep learning identified beta cell-specific regulatory signatures linked to T2D.
+Nature Communications Study,Pancreatic islet chromatin accessibility and conformation reveals distal enhancer networks of type 2 diabetes risk,Islets,Direct download,"Chromatin loops and enhancer networks in islets were mapped, linking T2D risk variants to insulin secretion genes."
+BioRxiv Study,Single-cell decoding of human islet cell type-specific alterations in type 2 diabetes reveals converging genetic- and state-driven β-cell gene expression defects,Beta cells,Direct download,Single-cell profiling of islet cells from T2D donors revealed altered beta cell gene expression and functional mass.
+,,,,
+Prompt,"
+### Task                                                                                                                            
+                                                                                                                                       
+Identify databases that provide programmatic access (API/FTP) to ATAC-seq data from Type 2 Diabetes (T2D) human samples.            
+                                                                                                                                       
+### Output Format                                                                                                                   
+                                                                                                                                       
+| Database | API/FTP Available | Access Type | URL |    ",,,
+,,,,
+Database,API/FTP Available,Access Type,URL,
+ATACdb,Yes,Public,ATACdb,
+ATACdb 2.0,Yes,Public,ATACdb 2.0,
+scATAC.Explorer,Yes,Public,scATAC.Explorer,
+OCHROdb,Yes,Public,OCHROdb,
+,,,,
+Prompt,"### Context                                                                                                                         
+                                                                                                                                       
+Here is a list of databases with ATAC-seq data from Type 2 Diabetes (T2D): [paste list]                                                                                                                                                                    
+ ### Task  
+ Score each database (1–3 scale):                                                                                                    
+                                                                                                                                       
+ 1. Data quality (QC/standardization)                                                                                                
+ 2. Accessibility (API/FTP availability)                                                                                             
+ 3. T2D annotation clarity (clear disease labeling)                                                                                  
+                                                                                                                                       
+ ### Output Format                                                                                                                   
+                                                                                                                                       
+ | Database | Quality | Accessibility | T2D Clarity | Total |                                                                        
+                                                                                                                                       
+ Sort by Total (highest first)        ",,,
+,,,,
+Database,Quality,Accessibility,T2D Clarity,Total
+ATACdb,3,3,3,9
+ATACdb 2.0,3,3,3,9
+scATAC.Explorer,2,3,2,7
+OCHROdb,2,2,2,6
+,,,,
+"Scoring Explanation:1.  Quality: ATACdb and ATACdb 2.0 are known for high-quality, standardized data. Others have moderate QC.\n2.  Accessibility: All databases provide APIs/FTP, but OCHROdb has slightly less user-friendly access.\n3.  T2D Clarity: ATACdb databases have clear disease annotations, while others are less specific.\n\nThe table is sorted by the total score, with the highest-ranked databases listed first. Let me know if you need further refinements!
+",,,,
+,,,,
+,,,,
+Prompt,"Prompt5: ### Context
+
+Known databases: GEO, ENCODE, ATACdb, Cistrome, ArrayExpress
+
+### Task
+
+List additional databases NOT in the list above that contain ATAC-seq data from Type 2 Diabetes (T2D) human samples.
+
+### Constraints
+
+* Must be real and publicly accessible
+* Must contain ATAC-seq data
+* Must have clear relevance to T2D
+
+### Output
+
+Name:
+URL:
+What makes it unique:",,,
+,,,,
+Name,URL,What makes it unique,,
+4D Nucleome,https://www.4dnucleome.org/,Integrates 3D genome architecture with chromatin accessibility data focuses on nuclear organization in metabolic cells,,
+Scatlas,https://scatlas.shinyapps.io/scatlas/,Dedicated single-cell ATAC-seq atlas with human tissue-specific accessibility profiles,,
+Gtrd,https://gtrd.biouml.org/,Transcription factor binding and chromatin accessibility includes diabetes-relevant TF analysis,,
+Enhanceratlas,https://www.enhanceratlas.org/,Enhancer identification from ATAC-seq data human enhancer profiles for metabolic tissues,,
