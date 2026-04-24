@@ -3,6 +3,9 @@
 <img width="676" height="404" alt="regularDB" src="assets/regularDB_animated_pipeline.svg" />
 # regularDB
 
+<p align="center">
+  <img src="assets/readme_animation.svg" alt="Animated README Terminal" width="900" />
+</p>
 > A curated, standardized, and benchmarked compendium of regulatory genomic datasets for Type 2 Diabetes (T2D) research.
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
