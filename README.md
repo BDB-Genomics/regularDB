@@ -1,3 +1,5 @@
+<img width="676" height="404" alt="regularDB" src="https://github.com/user-attachments/assets/162f9807-6733-4436-a886-c1242429eed0" />
+
 <img width="676" height="404" alt="regularDB" src="assets/regularDB_animated_pipeline.svg" />
 # regularDB
 
