@@ -1,0 +1,141 @@
+Prompt,"### Instruction
+
+List public biological databases that contain ATAC-seq data from human Type 2 Diabetes (T2D) samples.
+
+### Constraints
+
+* Include only databases/repositories (NOT individual datasets)
+* Only ATAC-seq (exclude RNA-seq, ChIP-seq, etc.)
+* Must be publicly accessible
+* Focus on human data only
+
+### Output Format
+
+| Database Name | URL | Description | Evidence of T2D relevance |
+",,
+Constraints,Include only databases/repositories; Only ATAC-seq; Publicly accessible; Human data.,,
+,,,
+Database Name,URL,Description,Evidence of T2D relevance
+NCBI GEO (Gene Expression Omnibus),https://www.ncbi.nlm.nih.gov/geo/,Public functional genomics repository supporting array- and sequence-based data.,"Hosts multiple human pancreatic islet ATAC-seq datasets from T2D donors (e.g., GSE129383, GSE262479)."
+ENCODE Portal,https://www.encodeproject.org/,Resource for functional genomics data with standardized processing pipelines.,T2D-associated genetic variants are enriched in ENCODE-annotated chromatin accessibility regions.
+ATACdb,http://www.licpathway.net/ATACdb,Curated database of human ATAC-seq samples with QC metrics and SNP annotations.,Explicitly annotates T2D-associated risk SNPs within chromatin accessibility regions.
+PANC-DB (HPAP Data Portal),https://hpap.pmacs.upenn.edu/,Open-access portal for the Human Pancreas Analysis Program.,Specifically includes ATAC-seq data from 56 organ donors with Type 2 Diabetes.
+DiabetesOmic,https://bio.liclab.net/diabetesOmicdb,Multi-omics diabetes-focused database with curated clinical annotations.,Contains samples spanning T1D and T2D across multiple tissues with clinical complication data.
+,,,
+Prompt,"### Instruction
+
+List databases containing ATAC-seq data from Type 2 Diabetes (T2D) human samples.
+
+### Example
+
+Database Name: GEO
+URL: https://www.ncbi.nlm.nih.gov/geo/
+Description: Public repository for functional genomics datasets
+Evidence of T2D relevance: Contains multiple T2D ATAC-seq studies submitted by labs
+
+### Task
+
+Now list 5–8 more databases in the exact same format. 
+",,
+,,,
+Database Name,URL,Description,Evidence of T2D relevance
+ENCODE Portal,https://www.encodeproject.org/,Comprehensive public resource for functional genomics data.,ATAC-seq datasets can be filtered by biosample attributes; T2D-associated genetic variants are significantly enriched.
+ATACdb,http://www.licpathway.net/ATACdb,"Curated database of >1,400 human ATAC-seq samples.",Explicitly annotates Type 2 diabetes-associated risk SNPs within chromatin accessibility regions.
+PANC-DB (HPAP Data Portal),https://hpap.pmacs.upenn.edu/,Open-access portal for the Human Pancreas Analysis Program.,Specifically includes ATAC-seq and snATAC-seq data from 56 donors with Type 2 Diabetes.
+DiabetesOmic,https://bio.liclab.net/diabetesOmicdb,Multi-omics diabetes-focused database.,Contains 87 ATAC-seq and 26 scATAC-seq samples specifically related to Type 2 diabetes.
+PanKbase,https://pankbase.org/single-cell.html,Interactive browser for single-cell and single-nucleus multi-omics.,Hosts snATAC-seq data from 41 human donors including those with Type 2 Diabetes.
+Human Cell Atlas Data Portal,https://data.humancellatlas.org/,Community-generated open multi-omic data portal.,Includes pancreatic islet and metabolic tissue ATAC-seq projects; filterable by disease state.
+Common Metabolic Diseases Genome Atlas (CMDGA),https://cmdga.org/,Functional genomics data portal for metabolic diseases.,"Explicitly focuses on metabolic diseases; hosts ATAC-seq data from pancreatic islets, liver, and adipose."
+Type 2 Diabetes Knowledge Portal,https://www.type2diabetesgenetics.org/,Resource for genetic associations and genomic annotations.,Integrates ATAC-seq-derived annotations to prioritize T2D GWAS variants.
+,,,
+Prompt,"### Role
+
+You are a bioinformatics expert specializing in epigenomics databases.
+
+### Task
+
+Identify databases that provide ATAC-seq data specifically from:
+
+* Human pancreatic islets
+* Human beta cells
+* Type 2 Diabetes (T2D) donors
+
+### Requirements
+
+* Only include databases you are confident exist
+* Avoid general-purpose databases unless they clearly contain T2D ATAC-seq data
+
+### Output
+
+For each database:
+
+* Name:
+* URL:
+* Sample Type:
+* Access Method (API / FTP / download):
+",,
+,,,
+Name,URL,Sample Type,Access Method
+PANC-DB (HPAP Data Portal),https://hpap.pmacs.upenn.edu/,Bulk/snATAC-seq from islets and beta cells.,Web portal download / API
+PanKbase,https://pankbase.org/,"Harmonized snATAC-seq from HPAP, IIDP, Prodo.",Browser / API / Download
+EGA – Imperial College Beta Cell Lab,https://ega-archive.org/datasets/EGAD00001005201,Bulk ATAC-seq from human pancreatic islets.,Controlled Access (EGA)
+Stanford Genomics of Diabetes Lab (via EGA),https://med.stanford.edu/genomics-of-diabetes/datasets.html,Bulk ATAC-seq from islets and iPSC-beta cells.,Controlled Access (EGA)
+NCBI GEO (Gene Expression Omnibus),https://www.ncbi.nlm.nih.gov/geo/,Multiple human pancreatic islet ATAC-seq datasets.,FTP / SRA Toolkit
+IIDP Islet ATAC-seq Collection,https://iidp.niddk.nih.gov/,Bulk ATAC-seq from human islets.,Request via IIDP portal
+Prodo Labs Islet Epigenomics Repository,https://prodolabs.com/research-resources/,Bulk and single-nucleus ATAC-seq from human islets.,Material/Data Transfer Agreement
+,,,
+Prompt,"### Instruction
+
+Find databases with ATAC-seq data for Type 2 Diabetes (T2D).
+
+### Reasoning Steps
+
+1. Identify known epigenomics repositories
+2. Check if they include ATAC-seq
+3. Check if they include T2D-related human samples
+4. Filter out irrelevant databases
+
+### Output Format
+
+| Database | ATAC-seq Support | T2D Evidence | Access Type |
+",,
+,,,
+Database,ATAC-seq Support,T2D Evidence,Access Type
+NCBI GEO,Yes - bulk and single-cell ATAC-seq,"Hosts multiple human islet studies (e.g., GSE129383, GSE194401)",Open download via FTP/SRA
+PANC-DB (HPAP),"Yes - bulk, snATAC-seq, scATAC-seq",Contains data from 56 T2D donors with clinical metadata,Web portal / API
+PanKbase,Yes - harmonized snATAC-seq,Includes signals from 41 donors with T2D stratification,Interactive browser / API
+DiabetesOmic,Yes - 87 ATAC-seq + 26 scATAC-seq samples,Contains 207 T2D-related sample sets across tissues,Web interface
+ATACdb,Yes - human ATAC-seq catalog,Annotates T2D-associated SNPs in accessibility regions,Web search / FTP
+ENCODE Portal,Yes - standardized ATAC-seq pipelines,T2D GWAS variants enriched in accessibility regions,Open download / API
+EGA (Imperial/Stanford),Yes - controlled-access bulk ATAC-seq,Hosts studies linking accessibility to T2D susceptibility,Controlled access (DAC)
+CMDGA,Yes - sci-ATAC-seq and bulk ATAC-seq,Aggregates data with T2D donor annotations,Web search / portal
+,,,
+Prompt,"### Context
+
+Known databases: GEO, ENCODE, ATACdb, Cistrome, ArrayExpress
+
+### Task
+
+Identify additional databases (NOT listed above) that contain ATAC-seq data from Type 2 Diabetes (T2D) human samples.
+
+### Constraints
+
+* Must be real and publicly accessible
+* Must contain ATAC-seq data
+* Must have relevance to T2D
+
+### Output
+
+Name:
+URL:
+Why it is relevant:
+",,
+,,,
+Name,URL,Why it is relevant,
+DiabetesOmic,https://bio.liclab.net/diabetesOmicdb/,"Integrates 87 ATAC-seq samples related to T2D across islets, liver, and kidney.",
+PANC-DB (HPAP Data Portal),https://hpap.pmacs.upenn.edu/,Hosts bulk and snATAC-seq from 56 human donors with Type 2 Diabetes.,
+PanKbase,https://pankbase.org/,Harmonized resource with snATAC-seq from >100 donors and cell-type resolution.,
+Common Metabolic Diseases Genome Atlas (CMDGA),https://cmdga.org/,Aggregates ATAC-seq from metabolic tissues with T2D donor annotations.,
+Type 2 Diabetes Knowledge Portal (T2DKP),https://www.type2diabetesgenetics.org/,"Integrates >5,000 datasets to link regulatory elements to T2D GWAS loci.",
+Stanford Translational Genomics Lab (via EGA),https://med.stanford.edu/genomics-of-diabetes/datasets.html,Hosts datasets linking chromatin accessibility to T2D susceptibility loci.,
+IIDP (Integrated Islet Distribution Program),https://iidp.niddk.nih.gov/,Distributes T2D donor islet samples and associated multi-omics metadata.,
