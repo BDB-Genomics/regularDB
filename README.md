@@ -131,5 +131,5 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 **BDB-Genomics** · [GitHub](https://github.com/BDB-Genomics)
 
 ## Contributors
-**Himanshu Bhandary**
+**Himanshu Bhandary &**
 **Rabi KC** 
